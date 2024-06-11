@@ -8,7 +8,7 @@ buildscript {
         jcenter() // jp2-android
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
+        classpath 'com.android.tools.build:gradle:7.5.0'
     }
 }
 
@@ -21,11 +21,6 @@ allprojects {
         mavenCentral()
         google()
         jcenter()
-    }
-
-    tasks.withType(JavaCompile) {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
     }
 
 //    Show more warnings if desired
