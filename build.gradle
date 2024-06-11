@@ -23,6 +23,11 @@ allprojects {
         jcenter()
     }
 
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
 //    Show more warnings if desired
 //    gradle.projectsEvaluated {
 //        tasks.withType(JavaCompile) {
